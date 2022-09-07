@@ -1,0 +1,32 @@
+ul{
+    color: cyan;
+    font-weight: bold;
+}
+
+#cssaw{
+    background-color: blue;
+    
+}
+.ace{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+div~p{
+    background-color: cyan;
+}
+#ss{
+    background-color: aquamarine;
+}
+#forbtn{
+    background-color: brown;
+    height: 30vh;
+    /* margin-top: 30pxp; */
+}
+#sub:hover{
+            /* margin-top: 40px;x */
+            height: 50px;
+            width: 80px;
+            border-radius: 100%;
+            justify-content: center;
+
+}

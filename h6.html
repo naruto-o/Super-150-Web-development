@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div:nth-of-type(1){
+            background-color: aqua;
+        }
+        div:nth-of-type(2){
+            background-color: crimson;
+        }
+        div:nth-of-type(3){
+            background-color: blueviolet;
+        }
+        div{
+            display: inline-block;
+            border: 4px solid black;
+            height: 250px;
+            width: 250px;
+            position: static;
+            
+        }
+        #acdf{
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+        #acd{
+            position: absolute;
+            top: 20px;
+
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>STATIC POSITION</h1>
+    </header>
+    <div>
+hello
+    </div>
+    <div>
+ok
+    </div>
+    <div>
+bye
+    </div>
+    <main>
+        <h1>
+            RELATIVE POSITION
+        </h1>
+        <section id="static">
+                <div id="acdf" style="background-color: cyan;" >OK</div>
+                <div style="background-color: rgb(132, 60, 60);">OK</div>
+                <div style="background-color: rgb(110, 104, 25);">OK</div>
+        </section>
+        <h1>
+            ABSOLUTE POSITION
+        </h1>
+        <section id="relative">
+            <div id="acd" style="background-color: blue;" >OK</div>
+                <div style="background-color: brown;">OK</div>
+                <div style="background-color: darkkhaki;">OK</div>
+
+        </section>
+    </main>
+</body>
+</html>

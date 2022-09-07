@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        
+        #a{
+            background-color: blueviolet;
+            margin: 10px;
+            padding: 10px;
+        }
+        #b{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+        }
+        #c{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+        }
+        #d{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+        }
+        #lagja{
+            height: 80vh;
+            width: 80vw;
+
+            background-color: indianred;
+            display: flex;
+            margin: 50px auto;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* flex-wrap: nowrap; */
+            justify-content:space-between;
+            /* align-content: center; */
+            /* flex-shrink: 3; */
+        }
+        header div h1{
+            text-align: center;
+
+        }
+        div{
+            border: 6px solid burlywood;
+        }
+        button{
+            background-color: rgb(126, 208, 126);
+            height: 30px;
+            width: 40px;
+            border: 4px solid forestgreen;
+        }
+        span a button:hover{
+            border: 5px solid crimson;
+            height: 50px;
+            width: 60px;
+            background-color:rgb(203, 120, 120) ;
+            border-radius: 50%;
+        }
+        #c{
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flexbox-properties" target="_blank"> <button ><b>GO</b></button></a>
+    </span>
+    <header>
+        <div  id="a" >
+            <h1>This is a css Flexbox</h1>
+        </div>
+    </header>
+    <section id="lagja">
+     <div  id="b" >
+        <h2>it is what it is</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia officiis sequi reprehenderit, hic aut saepe error doloribus modi iste. Inventore aspernatur debitis impedit. Inventore nulla quaerat in voluptatem doloribus necessitatibus culpa maxime, vel voluptas sequi, fugit asperiores omnis laboriosam.</div>
+    <div  id="c" >  <h2>it is what it is</h2>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia mollitia officiis sequi reprehenderit, hic aut saepe error doloribus modi iste. Inventore aspernatur debitis impedit. Inventore nulla quaerat in voluptatem doloribus necessitatibus culpa maxime, vel  consequuntur laborum, quos, ipsum maxime repellendus aliquam vero!
+        </div>
+    <div  id="d" >
+        <h2>it is what it is</h2>
+     
+       \atis eum ipsa impedit perspiciatis officia magnam suscipit? Debitis harum reiciendis exercitationem. Tempore, consequatur! Cumque fuga adipisci, officiis similique dolores delectus minima facilis fugiat inventore ipsum, sit optio nesciunt consequatur eaque quibusdam, placeat nostrum. Nobis sapiente placeat neque aspernatur.
+    </div>
+    </section>
+</body>
+</html>

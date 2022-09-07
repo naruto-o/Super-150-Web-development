@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul li{
+            display: inline;
+        } */
+    </style>
+</head>
+<main>
+<body>
+    <nav>
+        <fieldset>
+            <legend>MARATHON REGISTRATION</legend>
+        <ul>
+            <span> <li>Home</li></span>
+      
+          
+            <li>About </li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</fieldset>
+<section>
+    <p>
+    <form action="">
+        <label for="racername">enter your first name</label>
+        <input type="text" name="firstname" id="racername" required placeholder="first name">
+        <br>
+        <br>
+        <label for="racerlastname">enter your surname</label>
+        <input type="text" name="surname" id="racerlastname" required placeholder="enter surname">
+        <!-- <input type="submit" value="Submit"> -->
+        </p>
+</section>
+<section>
+    <p>
+    <h2>Select a Race:-</h2>
+    </p>
+    <p>
+        <input type="radio" id="full" name="races" value="marathon" checked>
+        <label for="full">Full Marathon</label>
+    </p>
+    <p>
+        <input type="radio" id="half" name="races" value="half marathon">
+        <label for="half">Half Marathon</label>
+    </p>
+    <input type="radio" id="fun" name="races" value="Fun Run 5 km">
+    <label for="fun">Fun Run 5 km</label>
+    </p>
+</section>
+<section>
+    <p>
+        <label for="rid">E-mail</label>
+        <input type="email" name="racermail" id="rid" placeholder="enter your email" required>
+        <br>
+        <br>
+        <label for="rpass">Password</label>
+        <input type="password" name="racerpass" id="rpass" placeholder="enter your password" required>
+    </p>
+</section>
+<section>
+    <p>
+        <label for="ag">Select Age Group</label>
+        <select name="agegroup" id="ag" required>
+            <option value="agegroups"> Select AGE GROUP</option>
+            <option value="Under 18">Under 18</option>
+            <option value="18 - 30">18 - 30</option>
+            <option value="30-45">30-45</option>
+            <option value="45-60">45-60</option>
+            <option value="60-100">60-100</option>
+        </select>
+        <aside>
+            <img src="data:image/jpeg;base64,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" alt="ERROR LOADING">
+        </aside>
+    </p>
+</section>
+<section>
+    <input type="submit" value="Register">
+</section>
+
+</form>
+</body>
+</main>
+</html>

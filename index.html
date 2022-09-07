@@ -1,0 +1,106 @@
+-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- external css below -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- internal below css -->
+    <!-- for class selector selection we use  " < . >" -->
+    <!-- ID  = 1 -MORE SPECIFIC -->
+    <!-- CLASS = 1- MORE GENERIC -->
+    <!-- FOR TARGETTING ID'S WE USE HASH < " # " > -->
+    <style>
+          h2{
+            color: crimson;
+            text-decoration: line-through;
+            border: 3px dashed orange;
+          }
+          div{
+            font-size: large;
+            color: darkkhaki;
+            font-weight: 900;
+            text-transform: uppercase;
+            border: 3px dashed orchid;
+          }
+          .ace{
+            color: yellowgreen;
+          }
+          /* for universal we use  = <*>
+           */
+
+    </style>
+    <!-- INLINE CSS
+    INTERNAL CSS
+    EXTERNAL CSSS
+    3 METHODS TO IMPLEMENT CSSS
+    a{property name : property value;} -->
+</head>
+<body>
+    <header>
+    <section>
+        <h1 style="color: red;border: 6px dashed cadetblue;"><!--inline css -->
+            This is H1 Heading
+        </h1>
+    </header>
+    </section>
+    <section id="sec1">
+        <h2>
+            this is h2 
+        </h2>
+        <div id="ss">
+            this is div 
+        </div>
+        <div class="ace">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe esse laborum quas repudiandae deleniti eaque beatae ducimus sunt id, itaque veritatis dolore, laboriosam nihil. Consectetur excepturi nam quisquam quas magni ullam reiciendis dolorem adipisci?</div>
+        <div id="cssaw">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus aspernatur, distinctio nobis a ipsa, illum totam aut illo numquam quo repellat asperiores nihil aperiam, quidem optio quam reiciendis dicta voluptatem!</div>
+        <article>
+            <p style="color: blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus beatae saepe et sequi aut incidunt, quibusdam placeat minus sapiente laboriosam deleniti facilis ipsum tempore assumenda. Minus dolor beatae voluptas aperiam assumenda! Re--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------rum fugit animi pariatur deleniti esse, odit obcaecati?</p>
+            <p style="color: blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus beatae saepe et sequi aut incidunt, quibusdam placeat minus sapiente laboriosam deleniti facilis ipsum tempore assumenda. Minus dolor beatae voluptas aperiam assumenda! Rerum fugit animi pariatur deleniti esse, odit obcaecati?</p>
+            <p style="color: blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus beatae saepe et sequi aut incidunt, quibusdam placeat minus sapiente laboriosam deleniti facilis ipsum tempore assumenda. Minus dolor beatae voluptas aperiam assumenda! Rerum fugit animi pariatur deleniti esse, odit obcaecati?</p>
+            <p style="color: blueviolet;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde doloribus beatae saepe et sequi aut incidunt, quibusdam placeat minus sapiente laboriosam deleniti facilis ipsum tempore assumenda. Minus dolor beatae voluptas aperiam assumenda! Rerum fugit animi pariatur deleniti esse, odit obcaecati?</p>
+        </article>
+    </section>
+    <section id="sec2">
+        <ul>
+            <li><a href="www.google.com"></a>This is a list</li>
+            <li><a href=""></a>This is a list</li>
+            <li><a href=""></a>This is a list</li>
+            <li><a href=""></a>This is a list</li>
+            
+        </ul>
+    </section>
+    <section>
+        <h3>
+            this is h3 yoo
+        </h3>
+        <div class="new">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia labore non veritatis neque rem laboriosam dolore ut ex sed assumenda, quasi dicta? Enim neque itaque reprehenderit fugiat vel in qui magnam, minus quisquam ullam?
+        </div>
+    </section>
+    <section>
+    <h2>General Sibling Selector</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+    </section>
+    <section>
+        <div id="forbtn">
+           <button type="submit" id="sub">
+             <b>SUBMIT</b>
+           </button>
+        </div>
+    </section>
+</body>
+</html>
