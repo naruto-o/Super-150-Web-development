@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ball jumping</title>
+    <style>
+        #A{
+            margin-left: 500px;
+            margin-top: 50px;
+            animation-name: slider;
+            animation-duration: 3s;
+            animation-delay: 0.5s;
+            animation-timing-function: linear;  
+          animation-iteration-count:infinite;      
+            
+        }
+        @keyframes slider{
+            25%{
+                margin-top: 250px;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <section id="A">
+        <img src="data:image/jpeg;base64,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" alt="">
+        <br>
+        <br>
+    </section>
+    <section id="b">
+        <div class="loader">
+
+        </div>
+    </section>
+</body>
+</html>

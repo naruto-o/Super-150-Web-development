@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 900px;
+            margin: 100px auto;
+            padding: 10px;
+            display: grid;
+            /* grid-template-columns:250px 250px 250px 250px; */
+            grid-template-columns: repeatauto-fill,minmax(300px,1fr);
+            /* row-gap: 500px;
+            
+            column-gap: 500px; */
+            gap: 10px;
+            /* align-items: stretch; */
+            /* justify-items: start; */
+        }
+        .box{
+            width: 300px;
+            background-color: steelblue;
+            border: 5px solid lightblue;
+            color: antiquewhite;
+            padding: 20px;
+        }
+        .box:nth-of-type(1){
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .box:nth-of-type(3){
+            grid-row-start:2 ;
+            grid-row-end: 4;      
+          }
+          @media screen and (min-width:700) {
+            .container{
+                max-width: 960px;
+
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">items
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorum labore, ratione dolor officia rerum corporis nisi, iste quia impedit aperiam ullam quis reprehenderit debitis suscipit hic in laborum. Odit corrupti blanditiis voluptas ratione?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima sunt recusandae pariatur laborum, quasi maxime! Odit dolore numquam quos tempore consequuntur, beatae voluptates quo molestiae suscipit accusantium, et quis soluta ut aut animi porro.
+        </div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+        <div class="box">items</div>
+    </div>
+</body>
+</html>
